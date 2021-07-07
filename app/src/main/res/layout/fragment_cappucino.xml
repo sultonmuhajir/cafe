@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentCappucino">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cappucino"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_below="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cappucino"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_below="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rp. 9000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_below="@+id/price"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Cappucino ini merupakan minuman yang bisa dibilang paling hits! Mulai dari minuman di cafe-cafe  ataupun minuman sachet, cappucino selalu nggak absen! Minuman favorit hampir semua orang ini sebenarnya terdiri dari espresso dan juga susu. Takarannya yaitu sepertiga espresso, sepertiga susu dan sepertiga froth susu. Nah, cappucino juga nggak memiliki art di atas busa kopinya."
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>

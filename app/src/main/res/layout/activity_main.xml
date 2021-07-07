@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <!-- Judul-->
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="S-Coffee"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Munu Button-->
+    <Button
+        android:id="@+id/tombolMenu"
+        android:layout_below="@id/judul"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Menu"
+        android:onClick="menuOnClick"
+        android:textColor="#222222"
+        app:backgroundTint="#CCCCCC"/>
+
+    <!-- Radio Group-->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tombolMenu"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/cappucino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cappucino     Rp.9000" />
+        <RadioButton
+            android:id="@+id/latte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latte               Rp.7000" />
+        <RadioButton
+            android:id="@+id/espresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso        Rp.8000" />
+        <RadioButton
+            android:id="@+id/mocha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mocha             Rp.7000" />
+    </RadioGroup>
+
+    <!-- Jumlah-->
+    <LinearLayout
+        android:id="@+id/boxJumlah"
+        android:layout_below="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah : "
+            android:textSize="16dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#222222"/>
+        <Button
+            android:id="@+id/min"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:onClick="minJumlah"
+            android:text="-"
+            android:textColor="#222222"
+            app:backgroundTint="#CCCCCC"/>
+        <TextView
+            android:id="@+id/jumlah"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="1"
+            android:textColor="#222222"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:onClick="plusJumlah"
+            android:text="+"
+            android:textColor="#222222"
+            app:backgroundTint="#CCCCCC"/>
+    </LinearLayout>
+
+    <!-- Order Button-->
+    <Button
+        android:id="@+id/tombolOrder"
+        android:layout_below="@id/boxJumlah"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="Order"
+        android:onClick="orderOnClick"/>
+    <!-- Total-->
+    <LinearLayout
+        android:id="@+id/boxTotal"
+        android:layout_below="@+id/tombolOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total : "
+            android:textSize="16dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <!-- Bayar-->
+    <LinearLayout
+        android:id="@+id/boxBayar"
+        android:layout_below="@+id/boxTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dibayar : "
+            android:textSize="16dp"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/bayar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <!-- Bayar Button-->
+    <Button
+        android:id="@+id/tombolBayar"
+        android:layout_below="@id/boxBayar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:text="Bayar" android:enabled="false"
+        android:onClick="bayarOnClick"/>
+    <!-- Kembalian-->
+    <TextView
+        android:id="@+id/kembalian"
+        android:layout_below="@+id/tombolBayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:textColor="#222222"/>
+
+</RelativeLayout>

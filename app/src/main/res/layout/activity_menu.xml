@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menu"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Judul-->
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="Menu"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:text="Cappucino"
+                android:onClick="tombolCappucino"
+                android:textColor="#222222"
+                app:backgroundTint="#CCCCCC"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:text="Latte"
+                android:onClick="tombolLatte"
+                android:layout_marginLeft="15dp"
+                android:textColor="#222222"
+                app:backgroundTint="#CCCCCC"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:text="Ekspresso"
+                android:onClick="tombolEkspresso"
+                android:textColor="#222222"
+                app:backgroundTint="#CCCCCC"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:text="Mocha"
+                android:onClick="tombolMocha"
+                android:layout_marginLeft="15dp"
+                android:textColor="#222222"
+                app:backgroundTint="#CCCCCC"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

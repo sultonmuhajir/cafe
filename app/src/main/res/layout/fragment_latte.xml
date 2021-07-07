@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentLatte">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/latte"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_below="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latte"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_below="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rp. 7000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_below="@+id/price"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Sama dengan cappucino, latte pada dasarnya ialah kopi susu. Latte diberi foam dari susu yang sudah di-steam. Kadar susunya paling banyak, barista menyebut komposisinya dengan very milky coffee. Tentunya kadar lemak di latte paling banyak dibandingkan kopi macchiato, piccolo, espresso dan cappucino."
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>
